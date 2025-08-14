@@ -2,11 +2,17 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://br.search.yahoo.com',
-    specPattern: 'cypress/e2e/**/*.js',
-    defaultCommandTimeout: 8000,
-    setupNodeEvents(on, config) {
-      // implement node event listeners here if needed
-    },
-  },
+    baseUrl: 'https://www.uol.com.br', // usado só quando não passar URL completa, o que garante que eu consiga atender a cobertura dos dois testes, incluindo com url de origem do Yahoo no primeiro.
+    defaultCommandTimeout: 15000,
+    pageLoadTimeout: 60000,
+    chromeWebSecurity: false,
+    video: false,
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports',
+      overwrite: false,
+      html: true,
+      json: true
+    }
+  }
 })

@@ -1,0 +1,16 @@
+{
+  "name": "atividade_pactosolucoes",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados em Cypress para Pacto Soluções",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": ["cypress", "automação", "QA", "Pacto Soluções"],
+  "author": "Leonardo França",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.0"
+  }
+}

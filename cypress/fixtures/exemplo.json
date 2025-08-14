@@ -1,0 +1,13 @@
+{
+  "usuario": {
+    "nome": "Teste QA",
+    "email": "teste@pactosolucoes.com.br",
+    "senha": "123456"
+  },
+  "buscaYahoo": {
+    "termo": "Pacto Soluções"
+  },
+  "uolTerms": {
+    "url": "https://www.uol.com.br/termos-de-seguranca/"
+  }
+}
